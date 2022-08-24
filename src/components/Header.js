@@ -4,10 +4,9 @@ const Header = () => {
   return (
     <div className='container'>
         <div className="header">
-        <h1>Simple Blog</h1>
+        <h3>Simple Blog</h3>
         <div className='menu'>
             <a href="" className="link">Home</a>
-            <a href="" className="link">Posts</a>
             <a href="" className="btn">Create Post</a>
         </div>
         </div>
