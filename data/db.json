@@ -1,0 +1,25 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "post title 1 ....",
+        "description": "post description 1 .....",
+        "image": "../../images/product1.jpg",
+        "author": "Ali"
+      },
+      {
+        "id": 2,
+        "title": "post title 2 ....",
+        "description": "post description 2 .....",
+        "image": "../../images/product3.jpg",
+        "author": ""
+      },
+      {
+        "id": 3,
+        "title": "post title 3 ....",
+        "description": "post description 3 .....",
+        "image": "../../images/product6.jpg",
+        "author": ""
+      }
+    ]
+  }
