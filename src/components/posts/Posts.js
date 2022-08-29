@@ -1,30 +1,12 @@
-import React, { useState,useEffect } from "react"
+import useFetch from "../useFetch"
 import Post from "./Post"
 
 const Posts = () => {
-  const [posts, setPosts] = useState(null)
-  const [isLoading, setIsLoading] = useState(false)
-  const[errMsg,setErrMsg]=useState(null)
-  useEffect(() => {
-    setIsLoading(true)
-    fetch("http://localhost:4000/posts")
-      .then((res) => {
-        if (!res.ok)
-        throw(Error("Not found due to error in URL"))
-        return res.json()
-      })
-      .then((data) => {
-        setPosts(data)
-        setIsLoading(false)
-      }).catch(err=>{
-        setIsLoading(false)
-       setErrMsg(err.message)
-      })
-  }, [])
+  let {data:posts,isLoading,errMsg}=useFetch("http://localhost:4000/posts")
   const handleDelete = (id) => {
     let currposts = [...posts]
     let newPosts = currposts.filter((post) => post.id !== id)
-    setPosts(newPosts)
+    // setPosts(newPosts)
 
     // console.log(newPosts)
   }
