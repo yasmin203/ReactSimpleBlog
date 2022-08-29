@@ -56,7 +56,13 @@ ul{
     background-color:transparent;
     color:black;
 }
+.not-found{
+    background-color:#ff0000d1;
+    width:100%;
+    padding:15px 10px;
+    color:white;
 
+}
 
 
 /* ****************** Post style ************** */

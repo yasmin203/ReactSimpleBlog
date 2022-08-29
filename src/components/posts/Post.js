@@ -1,6 +1,4 @@
 import React from "react"
-import img1 from "../../images/product1.jpg"
-import img2 from "../../images/product3.jpg"
 import styles from "../styles.css"
 const Post = ({post,handleDelete}) => {
   // const Post = ({post}) => {
