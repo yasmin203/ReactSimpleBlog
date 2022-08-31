@@ -1,10 +1,11 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import styles from "../styles.css"
 const Post = ({post,handleDelete}) => {
-  // const Post = ({post}) => {
-  // console.log(props)
   return (
     <div className='second-container'>
+          <Link to={`/post/${post.id}`} className="post">
+
       <div className='img-container'>
         <img src={post.image} alt='post-img' />
       </div>
@@ -14,10 +15,13 @@ const Post = ({post,handleDelete}) => {
         <p>
           {post.description}
         </p>
-        <button className="btn" onClick={()=>handleDelete(post.id)}>Delete</button>
+        </div>
+        </Link>
+     
+      <button className="btn" onClick={()=>handleDelete(post.id)}>Delete</button>
 
+   
       </div>
-    </div>
   )
 }
 export default Post

@@ -9,7 +9,7 @@ const useFetch=(url)=>{
       setIsLoading(true)
       fetch(url)
         .then((res) => {
-          console.log(res)
+          // console.log(res)
   
           if (!res.ok)
           throw Error(res.statusText ? res.statusText:"Erorr")
