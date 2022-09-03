@@ -17,7 +17,7 @@ const Posts = () => {
         {/* if there is posts and data is loading */}
         {posts &&
           posts.map((post) => (
-            <Post key={post.id} post={post} handleDelete={handleDelete} />
+            <Post key={post.id} post={post}  />
           ))}
         {isLoading && <div>is loading ....</div>}
         {/* if there is no posts and no data is loading  */}

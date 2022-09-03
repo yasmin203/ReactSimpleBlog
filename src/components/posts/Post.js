@@ -18,7 +18,6 @@ const Post = ({post,handleDelete}) => {
         </div>
         </Link>
      
-      <button className="btn" onClick={()=>handleDelete(post.id)}>Delete</button>
 
    
       </div>

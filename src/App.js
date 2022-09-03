@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import PostSingle from "./components/posts/PostSingle";
+import ErrorRoute from "./components/ErrorRoute";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<Home />} />
         <Route path="/create" element={<CreateNewPost />} />
         <Route path="/post/:id"  element={<PostSingle />} /> 
+        <Route path="*"  element={<ErrorRoute />} /> 
      </Routes>
     <Footer />
       </div>
